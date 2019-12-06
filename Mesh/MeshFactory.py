@@ -89,8 +89,6 @@ class MeshFactory:
                     tmp2[0] = j*verticalCut + i + 1;
                     tmpmesh.PushFaces(tmp1);
                     tmpmesh.PushFaces(tmp2);
-                    print("Down triangle" + str(tmp1));
-                    print("Up triangle" + str(tmp2));
                     pass;
 
             return tmpmesh;
