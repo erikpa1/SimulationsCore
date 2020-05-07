@@ -1,0 +1,39 @@
+<document>
+
+    <styles>
+        <style name="style1" font="Times"/>
+    </styles>
+
+    <constants>
+        <constant name="author" value ="Erik Palencik"/>
+    </constants>
+
+    <variables>
+        <variable name="testValue" value="Kra kra"/>
+    </variables>
+
+    <externals>
+        <external type="doc" source="another.xml"/>
+        <external type="url" source="www.google.com"/>
+    </externals>
+
+    <title>My title </title>
+
+    <header>Hello, its XML example here {const_author}</header>
+    <footer>Your page number is {core_page_number}</footer>
+
+    <body>
+        <content style=""/>
+
+        <h1>{core_chapter_number}</h1>
+        <p>
+            Hello my friend
+        </p>
+
+        <pagebreak/>
+
+
+    </body>
+
+
+</document>
