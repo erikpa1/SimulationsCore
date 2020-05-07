@@ -1,6 +1,6 @@
 import os
 
-from PdfMaker.PDFDocument import  Document
+from PdfMaker.PdfDocument import  PdfDocument
 from PdfMaker.PdfTemplateParser import PdfTemplateParser
 
 from Console import expand_console_to_builtins
@@ -8,9 +8,9 @@ from Console import expand_console_to_builtins
 expand_console_to_builtins()
 
 pdfPath = 'tuto1.pdf'
-sourcePath = 'example.xml'
+sourcePath = 'TestData/example.xml'
 
-document = Document()
+document = PdfDocument()
 parser = PdfTemplateParser(document)
 parser.Parse(sourcePath, pdfPath)
 

@@ -1,11 +1,12 @@
 <document>
 
+
     <styles>
         <style name="style1" font="Times"/>
     </styles>
 
     <constants>
-        <constant name="author" value ="Erik Palencik"/>
+        <constant name="author" value="Erik Palencik"/>
     </constants>
 
     <variables>
@@ -17,18 +18,21 @@
         <external type="url" source="www.google.com"/>
     </externals>
 
-    <title>My title </title>
+    <title>My title</title>
 
     <header>Hello, its XML example here {const_author}</header>
-    <footer>Your page number is {core_page_number}</footer>
+    <footer>Copy right {const_author}</footer>
 
     <body>
         <content style=""/>
 
         <h1>{core_chapter_number}</h1>
-        <p>
-            Hello my friend
-        </p>
+        <p>Hello my friend its {const_core_time_day}.{const_core_time_month}.{const_core_time_year}</p>
+        <p>This should be invalid: {const_core_invalid} This should be invalid: {const_core_invalid} This should be invalid: {const_core_invalid}</p>
+        <p>This should be invalid: </p>
+        <p>This should be invalid: {const_core_invalid}</p>
+        <p>This should be invalid: {const_core_invalid}</p>
+        <p>This should be invalid: {const_core_invalid}</p>
 
         <pagebreak/>
 

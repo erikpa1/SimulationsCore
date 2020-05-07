@@ -1,6 +1,7 @@
 
 from fpdf import FPDF
 
+
 from PdfMaker.TestingText import *
 
 class Orientation:
@@ -30,7 +31,7 @@ class FontModifiers():
 
 
 
-class Document(FPDF):
+class PdfDocument(FPDF):
 
     _headerText: str = ""
     _footerText: str = ""
